@@ -322,6 +322,25 @@ main {
     justify-content: center;
 }
 
+.video-title
+{
+    margin: 20px 0 0 0;
+    font-family: 'Plus Jakarta Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
+    color: #F9EAAD;
+}
+
+.video-description {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
 /* Footer Section */
 footer{
     background-color: #FFFFFF;
@@ -658,6 +677,7 @@ footer{
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .videos iframe {
