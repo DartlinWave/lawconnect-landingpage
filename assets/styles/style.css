@@ -702,5 +702,74 @@ footer{
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin: 0
 }
+
+/*Contact Us section*/
+
+.contact-us-container {
+    background-color: #393939;
+    text-align: center;
+    padding: 20px;
+    color: #F9EAAD;
+}
+
+.contact-us-title {
+    margin: 20px 0 0 0;
+    font-family: 'Plus Jakarta Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 150%;
+    color: #F9EAAD;
+}
+
+.contact-us-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px 20px;
+
+
+}
+
+.contact-us-image {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.contact-us-form {
+    width: 45%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.contact-us-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #F9EAAD;
+}
+
+.contact-us-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.contact-us-button {
+    background-color: #EF514F;
+    color: #F9EAAD;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: large;
+}
+
+
 
