@@ -3,14 +3,16 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Plus Jakarta Sans', sans-serif !important;
+    scroll-behavior: smooth;
 }
+
 
 .logo-container {
     display: flex;
     align-items: center;
     gap: 19px;
     color: #fff;
-    font: 600 20px Poppins, sans-serif;
+    font: 600 20px "Plus Jakarta Sans", sans-serif;
 }
 
 .logo {
@@ -51,17 +53,9 @@ body, html {
     border: 1px solid #EF514F;
     border-radius: 10px;
 }
-.btn-primary-nav {
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
-    padding: 8px 16px;
-    cursor: pointer;
-    background-color: #EF514F;
-    border: 3px solid #EF514F;
-    border-radius: 10px;
-}
-.btn-nav:hover, .btn-primary-nav:hover, a:hover {
+
+
+.btn-nav:hover, a:hover {
     opacity: 0.8;
 }
 
@@ -98,7 +92,7 @@ body, html {
 .main-description-title {
     margin: 0 0 0 0;
     font-weight: bold;
-    font-family: "Plus Jakarta Sans", serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-style: normal;
     font-size: 40px;
     color: #F9EAAD;
@@ -120,26 +114,40 @@ body, html {
     border-radius: 50px 0 0 0;
 }
 
-.btn-cta-container
+.btn-cta-container, .a
 {
-    text-decoration: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    background-color: #EF514F;
-    border: 3px solid #EF514F;
-    border-radius: 10px;
-    color: #F9EAAD;
+    text-decoration: none !important;
+    padding: 8px 16px !important;
+    cursor: pointer !important;
+    background-color: #EF514F !important;
+    border: 3px solid #EF514F !important;
+    border-radius: 10px !important;
+    color: #F9EAAD !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    margin-right: 10px;
+
 }
+
+.cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 16px;
+}
+
 .btn-2-cta-container
 {
     text-decoration: none;
     padding: 8px 16px;
     cursor: pointer;
     background-color: #191919;
-    border: 1px solid #EF514F;
     border-radius: 10px;
     color: #F9EAAD;
 }
+
+
 .btn-cta-container:hover, .btn-2-cta-container:hover, a:hover {
     opacity: 0.8;
 }
