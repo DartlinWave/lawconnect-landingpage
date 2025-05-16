@@ -40,3 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateCarousel();
 });
+
+function changeLanguage(lang) {
+    if (lang === 'es') {
+        window.location.href = 'index.html';
+    }
+    if (lang === 'en') {
+        window.location.href = 'index-en.html';
+    }
+}
