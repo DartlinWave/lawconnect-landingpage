@@ -3,40 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/Logo.png" >
-    <title>Law Connect - Asesoría legal a la palma de tu mano </title>
+    <link rel="icon" href="assets/images/Logo.png">
+    <title>Law Connect - Asesoría legal a la palma de tu mano</title>
     <meta name="description" content="Conecta con abogados calificados de manera rápida y eficaz.">
     <meta name="keywords" content="asesoría legal, abogados, consulta legal, online, LawConnect">
     <meta name="author" content="LawConnect">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <script src="assets/scripts/scripts.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="assets/scripts/scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="language-bar">
-            <button class="lan-btn" aria-label="Cambiar idioma a español" onclick="changeLanguage('es')">Español</button>
+            <button class="lan-btn active" aria-label="Cambiar idioma a español" onclick="changeLanguage('es')">Español</button>
             <button class="lan-btn" aria-label="Cambiar idioma a inglés" onclick="changeLanguage('en')">English</button>
         </div>
 
-
         <nav class="navbar">
-            <div class = "logo-container">
+            <div class="logo-container">
                 <img src="assets/images/Logo.png" alt="Logo" class="logo" aria-label="Logo de Law Connect">
                 <h1 class="logo-text">Law Connect</h1>
             </div>
             <div class="nav-options">
-                <a href="#benefits">Beneficios</a>
-                <a href="#testimonies">Testimonios</a>
-                <a href="#about-us">Sobre Nosotros</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#testimonies">Testimonials</a>
+                <a href="#about-us">About Us</a>
                 <a href="#videos">Videos</a>
-                <a href="#contact-us">Contáctanos</a>
-                <a href="" class="btn-cta-container" aria-label="Regístrate">Registrate</a>
-                <a href="" class="btn-cta-container" aria-label="Iniciar Sesión">Iniciar Sesión</a>
+                <a href="#contact-us">Contact us</a>
+                <a href="" class="btn-cta-container" aria-label="Regístrate">Sign-up</a>
+                <a href="" class="btn-cta-container" aria-label="Iniciar Sesión">Sign-in</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
+        <div class="mobile-menu">
+            <a href="#benefits">Beneficios</a>
+            <a href="#testimonies">Testimonios</a>
+            <a href="#about-us">Sobre Nosotros</a>
+            <a href="#videos">Videos</a>
+            <a href="#contact-us">Contáctanos</a>
+        </div>
     </header>
-    <main class = "main">
+    <main class="main">
         <section class="main-container">
             <div class="main-description-container">
                 <p class="main-description-subtitle">Plataforma para abogados 100% confiable</p>
@@ -44,7 +54,7 @@
                 <p class="main-description-text">Nuestra plataforma le brinda las herramientas para navegar por el panorama legal de manera eficiente, conectándolo con una red diversa de profesionales y recursos legales.</p>
                 <div class="cta-container">
                     <a href="" class="btn-cta-container" aria-label="Ingresar">Ingresar</a>
-                    <a href="" class="btn-2-cta-container" aria-label="Contactos">Contactos</a>
+                    <a href="#contact-us" class="btn-2-cta-container" aria-label="Contactos">Contactos</a>
                 </div>
             </div>
             <div class="main-image-container">
@@ -52,38 +62,37 @@
             </div>
         </section>
 
-        <section id="benefits" class ="Benefits-container">
+        <section id="benefits" class="benefits-container">
             <div class="benefits-text-container">
                 <h2 class="benefits-title">Beneficios</h2>
                 <p class="benefits-text">Nuestra plataforma le brinda las herramientas para navegar por el panorama legal de manera eficiente, conectándolo con una red diversa de profesionales y recursos legales.</p>
             </div>
             <div class="benefits-cards-container">
                 <div class="benefits-card">
-                    <img src="assets/images/DerechoPenal.png" alt="Abogados en juicio" class="benefits-card-image">
+                    <div class="benefits-card-icon">
+                        <img src="assets/images/DerechoPenal.png" alt="Abogados en juicio" class="benefits-card-image">
+                    </div>
                     <h3 class="benefits-card-title">DERECHO PENAL</h3>
                     <p class="benefits-card-text">Defensa legal en casos penales, incluyendo delitos graves y menores.</p>
                 </div>
-                <div class="vector">
-                    <img src="assets/images/Vector.png" alt="vector entre imágenes" class="vector-image">
-                </div>
                 <div class="benefits-card">
-                    <img src="assets/images/DerechoCivil.png" alt="Abogado escribiendo" class="benefits-card-image">
+                    <div class="benefits-card-icon">
+                        <img src="assets/images/DerechoCivil.png" alt="Abogado escribiendo" class="benefits-card-image">
+                    </div>
                     <h3 class="benefits-card-title">DERECHO CIVIL</h3>
                     <p class="benefits-card-text">Asistencia jurídica en disputas civiles, tales como contratos y propiedad.</p>
                 </div>
-                <div class="vector">
-                    <img src="assets/images/Vector.png" alt="vector entre imágenes" class="vector-image">
-                </div>
                 <div class="benefits-card">
-                    <img src="assets/images/DerechoLaboral.png" alt="Abogado dialogando con obreros" class="benefits-card-image">
+                    <div class="benefits-card-icon">
+                        <img src="assets/images/DerechoLaboral.png" alt="Abogado dialogando con obreros" class="benefits-card-image">
+                    </div>
                     <h3 class="benefits-card-title">DERECHO LABORAL</h3>
                     <p class="benefits-card-text">Representación en casos de despido injustificado, discriminación laboral y más.</p>
                 </div>
-                <div class="vector">
-                    <img src="assets/images/Vector.png" alt="vector entre imágenes" class="vector-image">
-                </div>
                 <div class="benefits-card">
-                    <img src="assets/images/DerechoFamiliar.png" alt="Abogada de familia" class="benefits-card-image">
+                    <div class="benefits-card-icon">
+                        <img src="assets/images/DerechoFamiliar.png" alt="Abogada de familia" class="benefits-card-image">
+                    </div>
                     <h3 class="benefits-card-title">DERECHO DE FAMILIA</h3>
                     <p class="benefits-card-text">Asesoramiento legal en asuntos de familia, como divorcio, custodia y adopción.</p>
                 </div>
@@ -93,7 +102,7 @@
         <section id="testimonies" class="comments-section">
             <div class="container">
                 <div class="title-description">
-                    <h1 class="comments-title">Con la confianza de miles de usuarios</h1>
+                    <h2 class="comments-title">Con la confianza de miles de usuarios</h2>
                     <p class="comments-description">Con la ayuda de miles de abogados registrados, solucionamos diversos casos de nuestros usuarios en todo el Perú.</p>
                 </div>
                 <div class="carousel-container">
@@ -101,14 +110,13 @@
                         <div class="comment-box">
                             <div class="author-info">
                                 <img src="./assets/images/HernandoCarreras.png" alt="Hernando Carreras" class="author-photo">
-
                                 <div class="author-text">
                                     <div class="author-name">Hernando Carreras</div>
                                     <div class="author-location">Lima, Perú</div>
                                 </div>
-                                <div class="rating">4.5</div>
+                                <div class="rating"><i class="fas fa-star"></i> 4.5</div>
                             </div>
-                            <p class="comment-text">“La interfaz de LawConnect es muy intuitiva y fácil de usar. Puedo encontrar y contactar abogados certificados rápidamente, lo cual es esencial para resolver mis asuntos legales.”</p>
+                            <p class="comment-text">"La interfaz de LawConnect es muy intuitiva y fácil de usar. Puedo encontrar y contactar abogados certificados rápidamente, lo cual es esencial para resolver mis asuntos legales."</p>
                         </div>
                         <div class="comment-box">
                             <div class="author-info">
@@ -117,11 +125,10 @@
                                     <div class="author-name">Luis Alberto Ramos</div>
                                     <div class="author-location">Lima, Perú</div>
                                 </div>
-                                <div class="rating">4.8</div>
+                                <div class="rating"><i class="fas fa-star"></i> 4.8</div>
                             </div>
-                            <p class="comment-text">“Gracias a la plataforma, pude resolver un problema laboral sin complicaciones. Los abogados fueron muy profesionales.”</p>
+                            <p class="comment-text">"Gracias a la plataforma, pude resolver un problema laboral sin complicaciones. Los abogados fueron muy profesionales."</p>
                         </div>
-
                         <div class="comment-box">
                             <div class="author-info">
                                 <img src="./assets/images/AnaClaudia.png" alt="Ana Ruiz" class="author-photo">
@@ -129,11 +136,10 @@
                                     <div class="author-name">Ana Claudia Ruiz</div>
                                     <div class="author-location">Lima, Perú</div>
                                 </div>
-                                <div class="rating">4.7</div>
+                                <div class="rating"><i class="fas fa-star"></i> 4.7</div>
                             </div>
-                            <p class="comment-text">“Me encantó la atención personalizada. Sentí que mi caso era prioridad desde el primer momento.”</p>
+                            <p class="comment-text">"Me encantó la atención personalizada. Sentí que mi caso era prioridad desde el primer momento."</p>
                         </div>
-
                         <div class="comment-box">
                             <div class="author-info">
                                 <img src="./assets/images/CarlosEnrique.png" alt="Carlos Vargas" class="author-photo">
@@ -141,11 +147,10 @@
                                     <div class="author-name">Carlos Enrique Vargas</div>
                                     <div class="author-location">Lima, Perú</div>
                                 </div>
-                                <div class="rating">4.6</div>
+                                <div class="rating"><i class="fas fa-star"></i> 4.6</div>
                             </div>
-                            <p class="comment-text">“Excelente servicio. Pude obtener asesoría legal sin moverme de casa y con respuestas claras y rápidas.”</p>
+                            <p class="comment-text">"Excelente servicio. Pude obtener asesoría legal sin moverme de casa y con respuestas claras y rápidas."</p>
                         </div>
-
                         <div class="comment-box">
                             <div class="author-info">
                                 <img src="./assets/images/FiorellaQuispe.png" alt="Fiorella Quispe" class="author-photo">
@@ -153,11 +158,10 @@
                                     <div class="author-name">Fiorella Quispe</div>
                                     <div class="author-location">Lima, Perú</div>
                                 </div>
-                                <div class="rating">5.0</div>
+                                <div class="rating"><i class="fas fa-star"></i> 5.0</div>
                             </div>
-                            <p class="comment-text">“La plataforma es muy segura y confiable. Me dio tranquilidad contar con apoyo legal en un momento difícil.”</p>
+                            <p class="comment-text">"La plataforma es muy segura y confiable. Me dio tranquilidad contar con apoyo legal en un momento difícil."</p>
                         </div>
-
                         <div class="comment-box">
                             <div class="author-info">
                                 <img src="./assets/images/JorgeAndres.png" alt="Jorge Silva" class="author-photo">
@@ -165,9 +169,9 @@
                                     <div class="author-name">Jorge Andrés Silva</div>
                                     <div class="author-location">Lima, Perú</div>
                                 </div>
-                                <div class="rating">4.9</div>
+                                <div class="rating"><i class="fas fa-star"></i> 4.9</div>
                             </div>
-                            <p class="comment-text">“LawConnect cambió mi forma de ver los procesos legales. Todo fue rápido, claro y sin costos ocultos.”</p>
+                            <p class="comment-text">"LawConnect cambió mi forma de ver los procesos legales. Todo fue rápido, claro y sin costos ocultos."</p>
                         </div>
                     </div>
                     <div class="pagination-container">
@@ -178,8 +182,8 @@
                             <span class="dot" aria-label="Diapositiva 4"></span>
                         </div>
                         <div class="arrows-container">
-                            <span class="arrow left-arrow" aria-label="Anterior">&#8592;</span>
-                            <span class="arrow right-arrow" aria-label="Siguiente">&#8594;</span>
+                            <span class="arrow left-arrow" aria-label="Anterior"><i class="fas fa-chevron-left"></i></span>
+                            <span class="arrow right-arrow" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -187,38 +191,46 @@
         </section>
 
         <section id="about-us" class="team-section">
-            <h1 style="text-align: center; font-size: 3em">Sobre Nosotros</h1>
+            <h2 class="section-title">Sobre Nosotros</h2>
             <div class="team-section-info">
                 <div class="team-card">
-                    <img src="assets/images/GonzaloZavala.jpeg" alt="Gonzalo Zavala">
+                    <div class="team-card-image">
+                        <img src="assets/images/GonzaloZavala.jpeg" alt="Gonzalo Zavala">
+                    </div>
                     <div class="member-info">
                         <h3>Zavala Quedena, Gonzalo Andre</h3>
                         <h4>Ingeniería de Software</h4>
-                        <p>Soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), con una gran pasión por la tecnología y un fuerte compromiso con el aprendizaje continuo. Estoy enfocado en seguir desarrollándome profesionalmente, adquiriendo conocimientos y habilidades que me permitan enfrentar nuevos desafíos en el mundo del desarrollo de software.</p>
+                        <p>Soy estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), con una gran pasión por la tecnología y un fuerte compromiso con el aprendizaje continuo.</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="assets/images/CamilaLoli.jpg" alt="Camila Loli">
+                    <div class="team-card-image">
+                        <img src="assets/images/CamilaLoli.jpg" alt="Camila Loli">
+                    </div>
                     <div class="member-info">
                         <h3>Loli Ramirez, Camila Cristina</h3>
                         <h4>Ingeniería de Software</h4>
-                        <p>Soy alumna de la carrera Ingeniería de Software, tengo 20 años. Tengo experiencia con el trabajo en equipo, creación de proyectos y creación de programas básicos. Aportaré al equipo mi creatividad, compromiso de trabajo en equipo, puntualidad y responsabilidad. Me comprometo a trabajar constantemente para mejorar nuestro proyecto y a generar un entorno de trabajo sano con mi grupo.</p>
+                        <p>Soy alumna de la carrera Ingeniería de Software, tengo 20 años. Tengo experiencia con el trabajo en equipo, creación de proyectos y creación de programas básicos.</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="assets/images/BarbaraEspinoza.jpeg" alt="Barbara Espinoza">
+                    <div class="team-card-image">
+                        <img src="assets/images/BarbaraEspinoza.jpeg" alt="Barbara Espinoza">
+                    </div>
                     <div class="member-info">
                         <h3>Espinoza Delgado, Bárbara Antonella</h3>
                         <h4>Ingeniería de Software</h4>
-                        <p>Mi nombre es Bárbara Antonella Espinoza Delgado, soy estudiante de Ingeniería de Software de 8vo ciclo. Y tengo experiencia en el uso de Cisco, SQL, redacción, búsqueda de información, exposiciones y cumplimiento de tareas</p>
+                        <p>Mi nombre es Bárbara Antonella Espinoza Delgado, soy estudiante de Ingeniería de Software de 8vo ciclo. Y tengo experiencia en el uso de Cisco, SQL, redacción y búsqueda de información.</p>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="assets/images/JohanQuinones.jpeg" alt="Johan Quiñones">
+                    <div class="team-card-image">
+                        <img src="assets/images/JohanQuinones.jpeg" alt="Johan Quiñones">
+                    </div>
                     <div class="member-info">
                         <h3>Quiñones Tintaya, Johan Jorge</h3>
                         <h4>Ingeniería de Software</h4>
-                        <p>Tengo 19 años y soy estudiante de ingeniería de software en la UPC, cursando el quinto ciclo. He adquirido una base sólida en algoritmos y programación orientada a objetos, lo que me permite enfrentar desafíos de desarrollo con eficacia. Estoy comprometido con mi crecimiento profesional y busco constantemente mejorar mis habilidades para contribuir de manera significativa en proyectos y equipos, ofreciendo soluciones innovadoras.</p>
+                        <p>Tengo 19 años y soy estudiante de ingeniería de software en la UPC, cursando el quinto ciclo. He adquirido una base sólida en algoritmos y programación orientada a objetos.</p>
                     </div>
                 </div>
             </div>
@@ -228,45 +240,55 @@
             <h2 class="video-title">Videos</h2>
             <p class="video-description">¿Quiénes somos? y ¿Qué ofrecemos? Encuéntralo aquí.</p>
             <div class="videos">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoID1" frameborder="0" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoID2" frameborder="0" allowfullscreen></iframe>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoID1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoID2" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
         <section id="contact-us" class="contact-us-container">
             <div class="contact-us-title">
-                <h3>Contáctanos</h3>
+                <h2>Contáctanos</h2>
             </div>
 
             <div class="contact-us-content">
-
-                <img src="./assets/images/Image-lawyers-talking.jpg" alt="Abogados conversando" class="contact-us-image">
+                <div class="contact-us-image-container">
+                    <img src="./assets/images/Image-lawyers-talking.jpg" alt="Abogados conversando" class="contact-us-image">
+                </div>
                 <form class="contact-us-form">
-                    <label for="firstName">Nombre</label>
-                    <input type="text" id="firstName" name="firstName" required aria-label="Enter your first name.">
-                    <label for="lastName">Apellido</label>
-                    <input type="text" id="lastName" name="lastName" required aria-label="Enter your last name.">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" required aria-label="Enter your email address.">
-                    <label for="details">Detalles</label>
-                    <textarea id="details" name="details" required aria-label="Enter the details you might want."></textarea>
+                    <div class="form-group">
+                        <label for="firstName">Nombre</label>
+                        <input type="text" id="firstName" name="firstName" required aria-label="Enter your first name.">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Apellido</label>
+                        <input type="text" id="lastName" name="lastName" required aria-label="Enter your last name.">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required aria-label="Enter your email address.">
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Detalles</label>
+                        <textarea id="details" name="details" required aria-label="Enter the details you might want."></textarea>
+                    </div>
                     <button type="submit" class="contact-us-button">Enviar</button>
                 </form>
-
             </div>
         </section>
-
     </main>
     <footer>
         <div class="footer-container">
             <div class="footer-content info">
                 <h2>Law Connect</h2>
-                <p>Aspiramos a convertirnos en la plataforma líder en plataforma legales,
-                    ayudando a miles de nuestros usuarios.</p>
+                <p>Aspiramos a convertirnos en la plataforma líder en servicios legales, ayudando a miles de nuestros usuarios.</p>
                 <div class="icons-social">
-                    <a href="https://facebook.com" target="_blank" aria-label="Visítanos en Facebook"><img src="assets/images/facebook.png"></a>
-                    <a href="https://x.com" target="_blank" aria-label="Visítanos en X"><img src="assets/images/Twitter.png"></a>
-                    <a href="https://instagram.com" target="_blank" aria-label="Visítanos en Instagram"><img src="assets/images/instagram.png"></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Visítanos en Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com" target="_blank" aria-label="Visítanos en X"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Visítanos en Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -281,22 +303,22 @@
                 </ul>
             </div>
 
-            <div class="footer-content social media">
+            <div class="footer-content social-media">
                 <h3>Sociales</h3>
                 <ul>
-                    <li><a href="https://discord.com" target="_blank" aria-label="Visítanos en Discord">Discord</a></li>
-                    <li><a href="https://instagram.com" target="_blank" aria-label="Visítanos en Instagram">Instagram</a></li>
-                    <li><a href="https://x.com" target="_blank" aria-label="Visítanos en Twitter">Twitter</a></li>
-                    <li><a href="https://facebook.com" target="_blank" aria-label="Visítanos en Facebook">Facebook</a></li>
+                    <li><a href="https://discord.com" target="_blank" aria-label="Visítanos en Discord"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="https://instagram.com" target="_blank" aria-label="Visítanos en Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://x.com" target="_blank" aria-label="Visítanos en Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://facebook.com" target="_blank" aria-label="Visítanos en Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
                 </ul>
             </div>
 
             <div class="footer-content contact">
                 <h3>Contacto</h3>
                 <ul>
-                    <li><a href="mailto:LawConnect@gmail.com" target="_blank" aria-label="Envíanos un correo a LawConnect">LawConnect@gmail.com</a></li>
-                    <li><a href="tel:+51999999999" target="_blank" aria-label="Llama a nuestro número telefónico">+51 999 999 999</a> </li>
-                    <li><p>Calle Los Tornados 2394</p></li>
+                    <li><a href="mailto:LawConnect@gmail.com" target="_blank" aria-label="Envíanos un correo a LawConnect"><i class="far fa-envelope"></i> LawConnect@gmail.com</a></li>
+                    <li><a href="tel:+51999999999" target="_blank" aria-label="Llama a nuestro número telefónico"><i class="fas fa-phone"></i> +51 999 999 999</a></li>
+                    <li><p><i class="fas fa-map-marker-alt"></i> Calle Los Tornados 2394</p></li>
                 </ul>
             </div>
         </div>
@@ -310,3 +332,4 @@
         </div>
     </footer>
 </body>
+</html>
