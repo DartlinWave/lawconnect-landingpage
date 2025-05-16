@@ -33,6 +33,7 @@ body, html {
     background-color: #191919;
     padding: 10px 10px;
     height : 50px;
+    margin-top: 60px;
 }
 .nav-options a {
     color: #F9EAAD;
@@ -771,5 +772,30 @@ footer{
     font-size: large;
 }
 
+.language-bar {
+    position: absolute;
+    top: 0;
+    width: 98.50%;
+    height: 40px;
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.lan-btn {
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
+.lan-btn:hover {
+    background-color: #e0e0e0;
+}
