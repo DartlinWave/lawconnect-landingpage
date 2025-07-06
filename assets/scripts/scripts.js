@@ -119,7 +119,31 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Make changeLanguage function globally available
     window.changeLanguage = changeLanguage;
-    
+
+    function changeLanguageExtraTerms(lang) {
+        if (lang === 'es') {
+            window.location.href = 'terms-and-conditions.html';
+        }
+        if (lang === 'en') {
+            window.location.href = 'terms-and-conditions-en.html';
+        }
+    }
+
+    // Make changeLanguageExtraTerms function globally available
+    window.changeLanguageExtraTerms = changeLanguageExtraTerms;
+
+    function changeLanguageExtraPrivacy(lang) {
+        if (lang === 'es') {
+            window.location.href = 'privacy-policy.html';
+        }
+        if (lang === 'en') {
+            window.location.href = 'privacy-policy-en.html';
+        }
+    }
+
+    // Make changeLanguageExtraPrivacy function globally available
+    window.changeLanguageExtraPrivacy = changeLanguageExtraPrivacy;
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
