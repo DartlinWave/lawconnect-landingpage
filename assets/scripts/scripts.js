@@ -109,39 +109,34 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Language Switcher
     function changeLanguage(lang) {
-        if (lang === 'es') {
-            window.location.href = 'index.html';
-        }
-        if (lang === 'en') {
-            window.location.href = 'index-en.html';
-        }
+        const currentPath = window.location.pathname;
+        const fileName = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+
+        const routeMap = {
+            'index.html': 'index-en.html',
+            'index-en.html': 'index.html',
+            'terms-and-conditions.html': 'terms-and-conditions-en.html',
+            'terms-and-conditions-en.html': 'terms-and-conditions.html',
+            'privacy-policy.html': 'privacy-policy-en.html',
+            'privacy-policy-en.html': 'privacy-policy.html'
+        };
+
+        const target = lang === 'en'
+            ? routeMap[fileName] || 'index-en.html'
+            : Object.keys(routeMap).find(key => routeMap[key] === fileName) || 'index.html';
+
+        window.location.href = target;
     }
-    
-    // Make changeLanguage function globally available
     window.changeLanguage = changeLanguage;
 
     function changeLanguageExtraTerms(lang) {
-        if (lang === 'es') {
-            window.location.href = 'terms-and-conditions.html';
-        }
-        if (lang === 'en') {
-            window.location.href = 'terms-and-conditions-en.html';
-        }
+        window.location.href = lang === 'es' ? 'terms-and-conditions.html' : 'terms-and-conditions-en.html';
     }
-
-    // Make changeLanguageExtraTerms function globally available
     window.changeLanguageExtraTerms = changeLanguageExtraTerms;
 
     function changeLanguageExtraPrivacy(lang) {
-        if (lang === 'es') {
-            window.location.href = 'privacy-policy.html';
-        }
-        if (lang === 'en') {
-            window.location.href = 'privacy-policy-en.html';
-        }
+        window.location.href = lang === 'es' ? 'privacy-policy.html' : 'privacy-policy-en.html';
     }
-
-    // Make changeLanguageExtraPrivacy function globally available
     window.changeLanguageExtraPrivacy = changeLanguageExtraPrivacy;
 
     // Smooth scrolling for anchor links
